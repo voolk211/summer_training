@@ -24,8 +24,7 @@ bool check(const vector<int>& arr, int X, int Y) {
 
 int main() {
     int N, X, Y;
-    int min_val = 0, max_val = 100; // Диапазон генерации по умолчанию
-
+    int min_val = 0, max_val = 100; 
     cout << "Enter N (size), X and Y:\n ";
     cin >> N >> X >> Y;
 
@@ -48,10 +47,10 @@ int main() {
     sort(arr.begin(), arr.end());
 
     if (check(arr, X, Y)) {
-        cout << "bad generator\n"; // генератор нуждается в доработке
+        cout << "bad generator\n"; 
     }
     else {
-        cout << "good generator\n";  // генератор хорош
+        cout << "good generator\n";
     }
 
     return 0;
